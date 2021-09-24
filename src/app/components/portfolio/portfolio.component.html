@@ -1,1 +1,10 @@
-<p>portfolio works!</p>
+<section class="container-gallery">
+  <mat-card *ngFor="let web of webPages">
+    <mat-card-title>{{web.title}}</mat-card-title>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+  </mat-card>
+  <mat-card-actions>
+    <button mat-button>Open</button>
+    <button mat-button>Info</button>
+  </mat-card-actions>
+</section>

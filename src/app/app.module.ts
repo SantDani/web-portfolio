@@ -13,6 +13,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
+import {MatCardModule} from '@angular/material/card';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { ContactComponent } from './components/contact/contact.component';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
