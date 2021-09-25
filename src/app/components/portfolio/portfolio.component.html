@@ -1,10 +1,14 @@
-<section class="container-gallery">
-  <mat-card *ngFor="let web of webPages">
-    <mat-card-title>{{web.title}}</mat-card-title>
-    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-  </mat-card>
-  <mat-card-actions>
-    <button mat-button>Open</button>
-    <button mat-button>Info</button>
-  </mat-card-actions>
-</section>
+<body class="container-portfolio center">
+  <h1>Portfolio</h1>
+  <section class="container-gallery">
+    <mat-card *ngFor="let web of webPages" class="container-card">
+      <mat-card-title>{{web.title}}</mat-card-title>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-actions class="card-container-buttons">
+        <button mat-flat-button *ngFor="let tag of web.tags" [class]="tag.color">{{tag.title}}</button>
+      </mat-card-actions>
+    </mat-card>
+
+  </section>
+</body>
+
