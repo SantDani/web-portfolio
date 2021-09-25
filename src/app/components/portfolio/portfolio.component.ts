@@ -17,24 +17,24 @@ export class PortfolioComponent implements OnInit {
       new Tag('Angular', 'red'),
       new Tag('Material', 'blue'),
       new Tag('External API', 'dark')
-    ]));
+    ], './../../../assets/card/rick_and_morty_title.png'));
 
     this.webPages.push(new WebPage('www.google.es', 'React CRUD - Products', [
       new Tag('ReactJS', 'dark'),
       new Tag('Firebase', 'yellow')
-      ]));
+      ], './../../../assets/card/react.png'));
     this.webPages.push(new WebPage('www.google.es', 'iNurse', [
       new Tag('Inoic', 'blue'),
       new Tag('Firebase', 'yellow')
-    ]));
+    ], './../../../assets/card/ionic_logo.png'));
     this.webPages.push(new WebPage('www.google.es', 'NodeJS CRUD - Films', [
       new Tag('NodeJS', 'green'),
       new Tag('MongoDB', 'green')
-    ]));
-    this.webPages.push(new WebPage('www.google.es', 'Maps', [
+    ], './../../../assets/card/nodejs.svg'));
+  /*  this.webPages.push(new WebPage('www.google.es', 'Maps', [
       new Tag('Angular', 'red'),
       new Tag('External API', 'dark')
-    ]));
+    ]));*/
 
   }
 

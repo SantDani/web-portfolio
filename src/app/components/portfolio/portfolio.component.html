@@ -5,7 +5,9 @@
       <mat-card-title>
         <h6 class="card-title">{{web.title}}</h6>
       </mat-card-title>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <div class="card-container-img">
+        <img mat-card-image [src]="web.image" [alt]="web.title">
+      </div>
       <mat-card-actions class="card-container-buttons">
         <button mat-flat-button *ngFor="let tag of web.tags" [class]="tag.color">{{tag.title}}</button>
       </mat-card-actions>
