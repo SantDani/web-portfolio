@@ -1,8 +1,10 @@
-<body class="container-portfolio center">
+<body class="container center-text">
   <h1>Portfolio</h1>
   <section class="container-gallery">
     <mat-card *ngFor="let web of webPages" class="container-card">
-      <mat-card-title>{{web.title}}</mat-card-title>
+      <mat-card-title>
+        <h6 class="card-title">{{web.title}}</h6>
+      </mat-card-title>
       <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
       <mat-card-actions class="card-container-buttons">
         <button mat-flat-button *ngFor="let tag of web.tags" [class]="tag.color">{{tag.title}}</button>
