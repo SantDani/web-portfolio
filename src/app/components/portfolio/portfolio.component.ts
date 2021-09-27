@@ -13,13 +13,13 @@ export class PortfolioComponent implements OnInit {
   constructor() {
     this.webPages = [];
 
-    this.webPages.push(new WebPage('www.google.es', 'Rick And Morty', [
+    this.webPages.push(new WebPage('https://www.google.es', 'Rick And Morty', [
       new Tag('Angular', 'red'),
       new Tag('Material', 'blue'),
       new Tag('External API', 'dark')
     ], './../../../assets/card/rick_and_morty_title.png'));
 
-    this.webPages.push(new WebPage('www.google.es', 'React CRUD - Products', [
+    this.webPages.push(new WebPage('https://react-firebase-47bf4.web.app/', 'React CRUD - Products', [
       new Tag('ReactJS', 'dark'),
       new Tag('Firebase', 'yellow')
       ], './../../../assets/card/react.png'));
@@ -41,8 +41,7 @@ export class PortfolioComponent implements OnInit {
   }
 
   ngOnInit(): void {
-
-    console.log('log - data', this.webPages);
+    // console.log('log - data', this.webPages);
   }
 
 }

@@ -12,7 +12,7 @@ export class WebPage {
     this.tags = tags;
 
     if (image){
-      console.log('log - hay imagen');
+      // console.log('log - hay imagen');
       this.image = image;
     }else{
       this.image = './../../../assets/card/default.png';

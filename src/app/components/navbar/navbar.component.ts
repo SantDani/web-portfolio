@@ -15,7 +15,4 @@ export class NavbarComponent implements OnInit {
     this.isMobile = this._responsiveService.isMobile();
   }
 
-  toggleMenu() {
-    console.log('log - menu toggle');
-  }
 }
