@@ -23,11 +23,13 @@ export class PortfolioComponent implements OnInit {
       new Tag('ReactJS', 'dark'),
       new Tag('Firebase', 'yellow')
       ], './../../../assets/card/react.png'));
-    this.webPages.push(new WebPage('www.google.es', 'iNurse', [
+
+    /*this.webPages.push(new WebPage('www.google.es', 'iNurse', [
       new Tag('Inoic', 'blue'),
       new Tag('Firebase', 'yellow')
-    ], './../../../assets/card/ionic_logo.png'));
-    this.webPages.push(new WebPage('www.google.es', 'NodeJS CRUD - Films', [
+    ], './../../../assets/card/ionic_logo.png'));*/
+
+    this.webPages.push(new WebPage('https://nodejs-mid.herokuapp.com/', 'NodeJS CRUD - Films', [
       new Tag('NodeJS', 'green'),
       new Tag('MongoDB', 'green')
     ], './../../../assets/card/nodejs.svg'));

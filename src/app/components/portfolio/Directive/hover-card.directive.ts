@@ -1,22 +1,30 @@
-import {Directive, ElementRef, HostListener, Input, Renderer2} from '@angular/core';
+import {Directive, ElementRef, HostListener, Input, Renderer2, OnChanges, SimpleChanges} from '@angular/core';
 
 @Directive({
   selector: '[appHoverCard]'
 })
-export class HoverCardDirective {
+export class HoverCardDirective implements OnChanges{
 
 
 
   @Input()
-  defaultElevation = 2;
+  defaultElevation: string ;
 
   @Input()
-  raisedElevation = 8;
+  raisedElevation: string;
 
   constructor(
     private element: ElementRef,
     private render: Renderer2
   ) {
+    this.defaultElevation = '2';
+    this.raisedElevation =  '8';
+
+    this.setElevation(this.defaultElevation);
+  }
+
+  ngOnChanges( changes: SimpleChanges): void {
+    // console.log('log - onChanges');
     this.setElevation(this.defaultElevation);
   }
 
@@ -32,12 +40,12 @@ export class HoverCardDirective {
   }
 
 
-  private setElevation(valElevation: number): void {
-    console.log('log - onMouse', valElevation);
+  private setElevation(valElevation: string): void {
+    // console.log('log - onMouse', valElevation);
     const elevationPrefix = 'mat-elevation-z';
     // remove all elevation classes
 
-    const classesToRemove = Array.from(( <HTMLElement> this.element.nativeElement).classList)
+    const classesToRemove = Array.from(( this.element.nativeElement as HTMLElement).classList)
       .filter( element => element.startsWith(elevationPrefix));
 
     classesToRemove.forEach(element => {
