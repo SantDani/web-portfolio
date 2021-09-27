@@ -1,7 +1,10 @@
 <body class="container center-text">
   <h1>Portfolio</h1>
   <section class="container-gallery">
-    <mat-card *ngFor="let web of webPages" class="container-card">
+    <mat-card
+      appHoverCard
+      class="container-card card-hover"
+      *ngFor="let web of webPages" >
       <mat-card-title>
         <h6 class="card-title">{{web.title}}</h6>
       </mat-card-title>

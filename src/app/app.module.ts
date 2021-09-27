@@ -14,6 +14,7 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatCardModule} from '@angular/material/card';
+import { HoverCardDirective } from './components/portfolio/Directive/hover-card.directive';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import {MatCardModule} from '@angular/material/card';
     AppComponent,
     PortfolioComponent,
     NavbarComponent,
-    ContactComponent
+    ContactComponent,
+    HoverCardDirective
   ],
   imports: [
     BrowserModule,
