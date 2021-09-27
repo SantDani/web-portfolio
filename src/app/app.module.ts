@@ -12,12 +12,18 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { ContactComponent } from './components/contact/contact.component';
+import {MatCardModule} from '@angular/material/card';
+import { HoverCardDirective } from './components/portfolio/Directive/hover-card.directive';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     PortfolioComponent,
-    NavbarComponent
+    NavbarComponent,
+    ContactComponent,
+    HoverCardDirective
   ],
   imports: [
     BrowserModule,
@@ -29,7 +35,8 @@ import {MatIconModule} from '@angular/material/icon';
     MatSidenavModule,
     MatListModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
