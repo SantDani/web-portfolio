@@ -3,15 +3,45 @@
 //  transform: translate3d(0,0,0)
 //  transition: background .4s cubic-bezier(.25,.8,.25,1),box-shadow 280ms cubic-bezier(.4,0,.2,1)
 
+.container-portfolio
+  display: flex
+  //flex-direction: column
+  flex-wrap: wrap
+  //justify-content: center
+  //align-items: center
+  gap: 1rem // add space between flex items
+
+  .menu
+    background-color: lightgrey
+    flex-basis: 5rem // ideal size
+    flex-grow: 1 // if it is not ideal to expand to 100%
+
+    a
+      //padding: 1rem
+
+      div
+        margin-bottom: 0.7rem
+        padding: 0.7rem
+        background-color: white
+        width: 100%
+
 .container-gallery
+
   display: flex
   flex-direction: row
   flex-wrap: wrap
   justify-content: center
-  align-items: center
+  //align-items: center
+  //gap: 1rem // add space between flex items
+  //background-color: lightcoral
+  flex-basis: 0
+  flex-grow: 999 // like z-index
+  min-width: 60%
+
+
 
   .container-card
-    width: 35rem
+    width: 25rem
     //height: 22rem
     margin: 0 1rem 1rem 1rem
     //background-color: brown
@@ -24,11 +54,11 @@
       //background-color: yellow
       width: 100%
       //max-height: 10rem
-      min-height: 10rem
-      height: 35rem
+      min-height: 25rem
+      //height: 25rem
 
       display: grid
-      //background-color: lightgrey
+      //background-color: lightsteelblue
 
       img
         display: block
@@ -40,6 +70,7 @@
 
         object-fit: cover
         vertical-align: center
+        //background-color: #FFCB2B
 
     .card-container-buttons
       display: flex
@@ -79,3 +110,7 @@
 
       .dark
         background-color: #282C34
+
+
+.example-card
+  max-width: 400px

@@ -10,19 +10,27 @@ import {Tag} from './models/Tag';
 export class PortfolioComponent implements OnInit {
 
   webPages: WebPage[];
+  items: number[];
   constructor() {
     this.webPages = [];
 
-    this.webPages.push(new WebPage('https://www.google.es', 'Rick And Morty', [
-      new Tag('Angular', 'red'),
-      new Tag('Material', 'blue'),
-      new Tag('External API', 'dark')
-    ], './../../../assets/card/rick_and_morty_title.png'));
+    this.items = [];
+
+
+    for (let i = 0; i < 20; i++){
+      this.items.push(i);
+    }
 
     this.webPages.push(new WebPage('https://react-firebase-47bf4.web.app/', 'React CRUD - Products', [
       new Tag('ReactJS', 'dark'),
       new Tag('Firebase', 'yellow')
       ], './../../../assets/card/react.png'));
+
+    this.webPages.push(new WebPage('https://rick-morty-srod.web.app/', 'Rick And Morty', [
+      new Tag('Angular', 'red'),
+      new Tag('Material', 'blue'),
+      new Tag('External API', 'dark')
+    ], './../../../assets/card/angular.png'));
 
     /*this.webPages.push(new WebPage('www.google.es', 'iNurse', [
       new Tag('Inoic', 'blue'),
