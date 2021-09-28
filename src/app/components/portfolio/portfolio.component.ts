@@ -48,10 +48,10 @@ export class PortfolioComponent implements OnInit {
       new Tag('Bootstrap', 'violet')
     ], './../../../assets/card/nodejs.svg'));
 
-    this.webPages.push(new WebPage('www.google.es', 'Maps', [
+/*    this.webPages.push(new WebPage('www.google.es', 'Maps', [
       new Tag('Angular', 'red'),
       new Tag('External API', 'dark')
-    ]));
+    ]));*/
 
   }
 
