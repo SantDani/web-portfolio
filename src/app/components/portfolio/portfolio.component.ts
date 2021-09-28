@@ -17,7 +17,7 @@ export class PortfolioComponent implements OnInit {
     this.items = [];
 
 
-    for (let i = 0; i < 20; i++){
+    for (let i = 0; i < 4; i++){
       this.items.push(i);
     }
 
