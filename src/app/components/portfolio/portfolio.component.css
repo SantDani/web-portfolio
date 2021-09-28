@@ -1,9 +1,18 @@
+.container-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
 .container-gallery {
+  flex: 1;
   display: grid;
   gap: 1rem;
+  grid-auto-flow: dense;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
   grid-template-rows: auto 1fr;
-  grid-auto-flow: dense;
 }
 .container-gallery .container-card {
   grid-column: span 2;

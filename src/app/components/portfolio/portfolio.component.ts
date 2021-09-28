@@ -36,7 +36,7 @@ export class PortfolioComponent implements OnInit {
       new Tag('External API', 'dark')
     ], './../../../assets/card/angular.png'));
 
-    /*this.webPages.push(new WebPage('www.google.es', 'iNurse', [
+/*    this.webPages.push(new WebPage('www.google.es', 'iNurse', [
       new Tag('Inoic', 'blue'),
       new Tag('Firebase', 'yellow')
     ], './../../../assets/card/ionic_logo.png'));*/
@@ -47,10 +47,11 @@ export class PortfolioComponent implements OnInit {
       new Tag('Heroku', 'violet'),
       new Tag('Bootstrap', 'violet')
     ], './../../../assets/card/nodejs.svg'));
-  /*  this.webPages.push(new WebPage('www.google.es', 'Maps', [
+
+    this.webPages.push(new WebPage('www.google.es', 'Maps', [
       new Tag('Angular', 'red'),
       new Tag('External API', 'dark')
-    ]));*/
+    ]));
 
   }
 
