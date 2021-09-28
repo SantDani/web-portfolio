@@ -12,14 +12,16 @@
   margin: 0;
 }
 .container-gallery .container-card .card-container-img {
-  width: 100%;
   display: grid;
-  background-color: #FFCB2B;
+  min-height: 63vh;
 }
 .container-gallery .container-card .card-container-img img {
   margin: auto;
-  max-width: 100%;
-  width: auto;
+  width: 100%;
+  height: auto;
+}
+.container-gallery .container-card .card-container-img-height-mobile {
+  min-height: 0;
   height: auto;
 }
 .container-gallery .container-card .card-container-buttons {
@@ -35,6 +37,7 @@
   text-shadow: 2px 2px 4px #000000;
   color: white;
   margin: 0.2rem;
+  cursor: default;
 }
 .container-gallery .container-card .card-container-buttons .red {
   background-color: red;
@@ -57,17 +60,6 @@
 }
 .container-gallery .container-card .card-container-buttons .dark {
   background-color: #282C34;
-}
-
-.container-items {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
-  grid-auto-flow: dense;
-  background-color: lightcoral;
-}
-.container-items .example-card {
-  grid-column: span 2;
 }
 
 /*# sourceMappingURL=portfolio.component.css.map */

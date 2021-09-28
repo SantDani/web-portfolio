@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {WebPage} from './models/WebPage';
 import {Tag} from './models/Tag';
+import {ResponsiveService} from '../../services/responsive.service';
 
 @Component({
   selector: 'app-portfolio',
@@ -11,9 +12,11 @@ export class PortfolioComponent implements OnInit {
 
   webPages: WebPage[];
   items: number[];
-  constructor() {
-    this.webPages = [];
 
+  isResponsive: boolean;
+  constructor(private _responsive: ResponsiveService) {
+    this.webPages = [];
+    this.isResponsive = true;
     this.items = [];
 
 
@@ -23,7 +26,8 @@ export class PortfolioComponent implements OnInit {
 
     this.webPages.push(new WebPage('https://react-firebase-47bf4.web.app/', 'React CRUD - Products', [
       new Tag('ReactJS', 'dark'),
-      new Tag('Firebase', 'yellow')
+      new Tag('Firebase', 'yellow'),
+      new Tag('Bootstrap', 'violet')
       ], './../../../assets/card/react.png'));
 
     this.webPages.push(new WebPage('https://rick-morty-srod.web.app/', 'Rick And Morty', [
@@ -39,7 +43,9 @@ export class PortfolioComponent implements OnInit {
 
     this.webPages.push(new WebPage('https://nodejs-mid.herokuapp.com/', 'NodeJS CRUD - Films', [
       new Tag('NodeJS', 'green'),
-      new Tag('MongoDB', 'green')
+      new Tag('MongoDB', 'green'),
+      new Tag('Heroku', 'violet'),
+      new Tag('Bootstrap', 'violet')
     ], './../../../assets/card/nodejs.svg'));
   /*  this.webPages.push(new WebPage('www.google.es', 'Maps', [
       new Tag('Angular', 'red'),
@@ -50,6 +56,8 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     // console.log('log - data', this.webPages);
+
+    this.isResponsive = this._responsive.isMobile();
   }
 
 }

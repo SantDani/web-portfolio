@@ -1,0 +1,31 @@
+.container-contact {
+  height: 100%;
+  width: 100%;
+}
+.container-contact .contact-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 50vh;
+  left: 10vw;
+  right: 10vw;
+}
+
+.contact-button {
+  width: fit-content;
+  margin: 1rem;
+}
+.contact-button img {
+  width: 1.5rem;
+  padding: 0.3rem 0.7rem 0.3rem 0;
+}
+.contact-button .contact-button-img-linkedin {
+  color: blue;
+}
+
+.contact-title {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=contact.component.css.map */
