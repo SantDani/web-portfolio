@@ -1,0 +1,16 @@
+.container {
+  margin: auto;
+  width: 90%;
+  display: grid;
+}
+
+.center-text {
+  text-align: center;
+}
+
+h1 {
+  color: #3F51B5;
+  font-size: 3rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
