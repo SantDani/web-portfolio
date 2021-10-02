@@ -1,6 +1,6 @@
 <body class="container center-text">
   <h1>Portfolio</h1>
-  <section class="container-gallery">
+  <section class="container-gallery" *ngIf="!this.isDevGallery">
     <mat-card
       appHoverCard
       raisedElevation="12"
@@ -21,5 +21,6 @@
     </mat-card>
 
   </section>
+  <app-dev-gallery [isDevGallery]="this.isDevGallery"></app-dev-gallery>
 </body>
 

@@ -1,0 +1,21 @@
+<section class="container-gallery" *ngIf="this.isDevGallery">
+  <mat-card
+    appHoverCard
+    raisedElevation="12"
+    class="container-card card-hover"
+    *ngFor="let web of this.testWebPages" >
+    <a [href]="web.URL" target="_blank">
+      <!--<mat-card-title>
+        <h6 class="card-title">{{web.title}}</h6>
+      </mat-card-title>-->
+      <div class="card-container-img">
+        <img mat-card-image [src]="web.image" [alt]="web.title">
+      </div>
+
+    </a>
+    <mat-card-actions class="card-container-buttons">
+      <button mat-flat-button *ngFor="let tag of web.tags" [class]="tag.color">{{tag.title}}</button>
+    </mat-card-actions>
+  </mat-card>
+
+</section>

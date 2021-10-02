@@ -10,8 +10,11 @@ import {Tag} from './models/Tag';
 export class PortfolioComponent implements OnInit {
 
   webPages: WebPage[];
+  isDevGallery: boolean;
+
   constructor() {
     this.webPages = [];
+    this.isDevGallery = true;
 
     this.webPages.push(new WebPage('https://www.google.es', 'Rick And Morty', [
       new Tag('Angular', 'red'),

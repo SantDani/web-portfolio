@@ -15,6 +15,7 @@ import {MatIconModule} from '@angular/material/icon';
 import { ContactComponent } from './components/contact/contact.component';
 import {MatCardModule} from '@angular/material/card';
 import { HoverCardDirective } from './components/portfolio/Directive/hover-card.directive';
+import { DevGalleryComponent } from './components/portfolio/dev-gallery/dev-gallery.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { HoverCardDirective } from './components/portfolio/Directive/hover-card.
     PortfolioComponent,
     NavbarComponent,
     ContactComponent,
-    HoverCardDirective
+    HoverCardDirective,
+    DevGalleryComponent
   ],
   imports: [
     BrowserModule,
