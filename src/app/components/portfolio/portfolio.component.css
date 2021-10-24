@@ -1,17 +1,74 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 1 | @import '~@angular/material/_theming.scss'
- *   |         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
- *   '
- *   portfolio.component.sass 1:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 1 \2502  @import '~@angular/material/_theming.scss'\d\a   \2502          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   portfolio.component.sass 1:9  root stylesheet";
+.container-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
 }
+
+.container-gallery {
+  flex: 1;
+  display: grid;
+  gap: 1rem;
+  grid-auto-flow: dense;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  grid-template-rows: auto 1fr;
+}
+.container-gallery .container-card {
+  grid-column: span 2;
+}
+.container-gallery .container-card .card-title {
+  margin: 0;
+}
+.container-gallery .container-card .card-container-img {
+  display: grid;
+  min-height: 63vh;
+}
+.container-gallery .container-card .card-container-img img {
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+.container-gallery .container-card .card-container-img-height-mobile {
+  min-height: 0;
+  height: auto;
+}
+.container-gallery .container-card .card-container-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.container-gallery .container-card .card-container-buttons button {
+  opacity: 0.7;
+  width: fit-content;
+  text-shadow: 2px 2px 4px #000000;
+  color: white;
+  margin: 0.2rem;
+  cursor: default;
+}
+.container-gallery .container-card .card-container-buttons .red {
+  background-color: red;
+  color: white;
+}
+.container-gallery .container-card .card-container-buttons .blue {
+  background-color: #7CABFF;
+}
+.container-gallery .container-card .card-container-buttons .yellow {
+  background-color: #FFCB2B;
+}
+.container-gallery .container-card .card-container-buttons .green {
+  background-color: #12924F;
+}
+.container-gallery .container-card .card-container-buttons .violet {
+  background-color: #79589F;
+}
+.container-gallery .container-card .card-container-buttons .gray {
+  background-color: gray;
+}
+.container-gallery .container-card .card-container-buttons .dark {
+  background-color: #282C34;
+}
+
+/*# sourceMappingURL=portfolio.component.css.map */

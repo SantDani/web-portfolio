@@ -41,7 +41,13 @@ export class PortfolioComponent implements OnInit {
       new Tag('Firebase', 'yellow')
     ], './../../../assets/card/ionic_logo.png'));*/
 
-    this.webPages.push(new WebPage('https://nodejs-mid.herokuapp.com/', 'NodeJS CRUD - Films', [
+    this.webPages.push(new WebPage('https://trivia-srod.web.app/home', 'Trivia', [
+      new Tag('Angular', 'red'),
+      new Tag('Ionic', 'blue'),
+      new Tag('External API', 'dark')
+    ], './../../../assets/card/ionic_logo.png'));
+
+    this.webPages.push(new WebPage('', 'NodeJS CRUD - Films', [
       new Tag('NodeJS', 'green'),
       new Tag('MongoDB', 'green'),
       new Tag('Heroku', 'violet'),
